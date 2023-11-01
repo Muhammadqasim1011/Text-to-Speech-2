@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text-to-Speech Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Text-to-Speech Conversion</h1>
+        </div>
+        <div class="content">
+            <div class="controls">
+                <textarea id="text-input" placeholder="Enter text..."></textarea>
+                <select id="language-select">
+                    <option value="en-US">English (US)</option>
+                    <option value="es-ES">Spanish (Spain)</option>
+                </select>
+                <select id="voice-select"></select>
+                <label>volume-control</label>
+                <input type="range" id="volume-control" min="0" max="1" step="0.1" value="1">
+                <label>Pitch-control</label>
+                <input type="range" id="pitch-control" min="0.5" max="2" step="0.1" value="1">
+                <label>Rate-control</label>
+                <input type="range" id="rate-control" min="0.1" max="2" step="0.1" value="1">
+                <button id="convert-button">Convert to Speech</button>
+                <button id="pause-button">Pause</button>
+                <button id="resume-button">Resume</button>
+                <button id="save-button">Save as Audio</button>
+            </div>
+            <div class="output">
+                <div id="highlighted-text"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
